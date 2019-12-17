@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mastermind !</title>
+	<link rel="stylesheet" type="text/css" href="" id="link_css">
+	<link rel="stylesheet" type="text/css" href="Style/generator.css">
+</head>
+
+<body>
+
+<script src="jquery.js"></script>
+
+<script type="text/javascript" src="variablesGlobales.js"></script>
+<script type="text/javascript" src="debugger.js"></script>
+<script type="text/javascript" src="utils_masterthinker.js"></script>
+<script type="text/javascript" src="utils_html.js"></script>
+
+
+<script type="text/javascript" src="masterthinker_affichage.js"></script>
+<script type="text/javascript" src="masterthinker_tableauchaine.js"></script>
+<script type="text/javascript" src="masterthinker_selection.js"></script>
+<script type="text/javascript" src="masterthinker_clesMP.js"></script>
+<script type="text/javascript" src="masterthinker_lettres_libres.js"></script>
+<script type="text/javascript" src="masterthinker_setup_game.js"></script>
+<script type="text/javascript" src="masterthinker_setup_proposition.js"></script>
+<script type="text/javascript" src="masterthinker_constructionLegacy.js"></script>
+<script type="text/javascript" src="masterthinker_exploration.js"></script>
+<script type="text/javascript" src="masterthinker_construction.js"></script>
+<script type="text/javascript" src="masterthinker_reponsesIndicationMaitre.js"></script>
+<script type="text/javascript" src="clic_raccourci_nbClesValCles.js"></script>
+
+
+
+
+<h2>Casse-tête généré</h2>
+
+<select id="select_theme">
+	<option value="classique">Classique</option>
+	<option value="futuriste">Futuriste</option>
+</select>
+
+<div class="top">
+	<div id="div_preparation">
+		Nombre de valeurs de clés différentes : <input id="input_valCles" value="8"></input></br>
+		Taille du code en clés : <input id="input_nbCles" value="4"></input></br>
+		<span class="clic_raccourci_prepa" id="clic_prepa306">3/6</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa408">4/8</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa510">5/10</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa612">6/12</span></br>
+		<span class="clic_raccourci_prepa" id="clic_prepa426">4/26</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa412">4/12</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa516">5/16</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa616">6/16</span>
+		</br>  
+		<span id="clic_lancement" class="clicable">Lancer simulation</span><span id="clic_afficher_reponse" class="clicable">Voir réponse</span> </br>
+	</div>
+</div>
+
+<div class="liste_propositions">
+	<div id="div_liste_propositions"></div>
+	<div id="div_bonne_reponse" style="visibility:hidden"></div>
+</div>
+
+
+<script type="text/javascript" src="generation_go.js"></script>
+<script type="text/javascript" src="style.js"></script>
+
+
+</body>
+</html>
+

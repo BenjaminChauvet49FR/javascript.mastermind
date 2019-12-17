@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mastermind !</title>
+	<link rel="stylesheet" type="text/css" href="" id="link_css">
+	<link rel="stylesheet" type="text/css" href="Style/mastermind.css">
+
+</head>
+
+<body>
+<script src="jquery.js"></script>
+
+<h2>L'ordinateur devine !</h2>
+
+<select id="select_theme">
+	<option value="classique">Classique</option>
+	<option value="futuriste">Futuriste</option>
+</select>
+
+<div class="top">
+	<div id="div_preparation">
+		Nombre de valeurs de clés différentes : <input id="input_valCles" value="8"></input></br>
+		Taille du code en clés : <input id="input_nbCles" value="4"></input></br>
+		<span class="clic_raccourci_prepa" id="clic_prepa306">3/6</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa408">4/8</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa510">5/10</span> 
+		<span class="clic_raccourci_prepa" id="clic_prepa612">6/12</span></br>
+		<span class="clic_raccourci_prepa" id="clic_prepa426">4/26</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa412">4/12</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa516">5/16</span>
+		<span class="clic_raccourci_prepa" id="clic_prepa616">6/16</span>
+		</br>  
+		<span id="clic_preparation" class="clicable">Lancer le jeu</span> </br>
+	</div>
+	<div id="div_resume" style="display:none">
+		Valeurs des clés : de A à <span id="span_infoValCles"></span></br>
+		Taille du code en clés : <span id="span_infoNbCles"></span></br>
+		<span id="clic_retour" class="clicable">Recommencer</span> </br>
+	</div>
+</div>
+
+<div class="devin">
+	<div id="div_proposition" style="display:none">
+		<div id="div_proposition_commune">
+			Proposition du devin <span id="span_proposition"></span></br>
+			Bons : <input id="input_bons" value=""></input></br>
+			Mauvais :<input id="input_mauvais" value="" class="clicable"></input></br>
+			<span id="clic_reponse">Soumettre réponse</span></br>
+		</div>
+		<div id="div_ultime_proposition" style="display:none">
+			L'IA est sûre d'elle, le code est : <span id="span_ultime_proposition"></span></br>
+			<span class="ultime_proposition_ia" id="clic_ultime_oui" class="clicable">Oui</span></br>
+			<span class="ultime_proposition_ia" id="clic_ultime_non" class="clicable">Non ! Le code est : </span>
+			<input id="input_reponse_finale" value=""></span>
+		</div>
+		<div id="div_code_impossible" style="display:none">
+			L'IA ne voit aucune proposition possible.</br> 
+			Es-tu sûr de ne pas avoir fait d'erreur ?</br>
+			A quel code penses-tu ?</br>
+			<input id="input_code_impossible" value="" class="clicable"></span></br>
+			<span id="clic_code_impossible">Voilà le code</span></br>
+		</div>
+	</div>
+</div>
+
+<div class="liste_propositions">
+	<div id="div_liste_propositions"></div>
+	<div id="div_reponse_devin"></div>
+</div>
+
+<script type="text/javascript" src="variablesGlobales.js"></script>
+<script type="text/javascript" src="debugger.js"></script>
+<script type="text/javascript" src="utils_masterthinker.js"></script>
+<script type="text/javascript" src="masterthinker_affichage.js"></script>
+
+<script type="text/javascript" src="masterthinker_tableauchaine.js"></script>
+
+<script type="text/javascript" src="masterthinker_selection.js"></script>
+<script type="text/javascript" src="masterthinker_clesMP.js"></script>
+<script type="text/javascript" src="masterthinker_lettres_libres.js"></script>
+
+<script type="text/javascript" src="masterthinker_setup_game.js"></script>
+<script type="text/javascript" src="masterthinker_setup_proposition.js"></script>
+
+<script type="text/javascript" src="masterthinker_constructionLegacy.js"></script>
+<script type="text/javascript" src="masterthinker_exploration.js"></script>
+<script type="text/javascript" src="masterthinker_construction.js"></script>
+
+<script type="text/javascript" src="masterthinker_reponsesIndicationMaitre.js"></script>
+<script type="text/javascript" src="addEventListeners.js"></script>
+<script type="text/javascript" src="clic_raccourci_nbClesValCles.js"></script>
+<script type="text/javascript" src="utils_html.js"></script>
+
+<script type="text/javascript" src="style.js"></script>
+
+
+</body>
+</html>
+

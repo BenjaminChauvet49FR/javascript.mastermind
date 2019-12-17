@@ -1,0 +1,55 @@
+#input_valCles, #input_nbCles{
+	width:2em;
+}
+
+#clic_lancement, #clic_afficher_reponse{
+	text-align: center;
+	border: 1px solid black;
+	background-color: #ffff00;
+	margin: 0.2em;
+	margin-top :0.2em;
+	margin-bottom:0.2em;
+}
+
+
+.clic_raccourci_prepa{
+	border: 1px solid black;	
+	padding-left:0.5em;
+	padding-right:0.5em;
+	margin-left:0.2em;
+	margin-right:0.2em;
+	background-color:#ff8800;
+	cursor:pointer;
+}
+
+.ultime_proposition_ia{
+	border: 1px solid black;	
+	padding-left:0.5em;
+	padding-right:0.5em;
+	margin-left:0.2em;
+	margin-right:0.2em;
+}
+
+.exemple_proposition{
+	font-family: "Courier New";
+}
+
+.exemple_bons{
+	font-family:"Courier New";
+	color: #00cc22;
+}
+
+.exemple_mauvais{
+	font-family:"Courier New";
+	color: #cc0000;
+}
+
+.mauvaise_proposition{
+	font-family:"Courier New";
+	color: #880000;
+}
+
+.bonne_proposition{
+	font-family:"Courier New";
+	color: #cc00ff;
+}
